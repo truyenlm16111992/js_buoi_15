@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    font-family: 'Lora', serif;
+    background: #fff;
+    font-size: 16px;
+}
+.box{
+    background: #ecf0f3;
+    border-radius: 5px;
+    /* box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07); */
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, .2), -1px -1px 10px 0px rgba(0, 0, 0, .2);
+}
+/* Nav pill  */
+.nav-pills{
+    padding: 20px;
+    border: 1px solid transparent;
+    box-shadow: 3px 0px 10px -2px rgba(0, 0, 0, .2);
+}
+.nav-pills button{
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+}
+.nav-pills button::before{
+    content: '\f02d';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 10px;
+}
+.nav-pills button.active::before{
+    content: '\f518';
+}
+/* Page Detail  */
+.pagedetail{
+    padding: 20px 12px;
+}
+.pagedetail p{
+    margin: 5px 0;
+}
+.pagedetail .pagedetail__icon{
+    margin-right: 0.5rem;
+}
+.pagedetail ul{
+    padding-left: 40px;
+    margin: 5px 0;
+}
+.pagedetail__notice,
+.pagedetail__hint,
+.pagedetail__modelblock{
+    padding: 10px 10px;
+    border: 1px solid #eee;
+    border-left-width: 0.25rem;
+    border-radius: 0.25rem;
+    border-left-color: #f0ad4e;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .2);
+    width: 100%;
+}
+.pagedetail__notice{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.pagedetail__hint{
+    border-left-color: #5bc0de;
+}
+.pagedetail__notice .pagedetail__icon{
+    color: red;
+}
+.pagedetail__form button{
+    padding: 10px 40px;
+    border-radius: 25px;
+}
+.pagedetail__modelitem{
+    padding: 0 5px;
+}
+.pagedetail__model .pagedetail__modelblock{
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
+    border-left-color: #1e8e25;
+}
+.pagedetail .pagedetail__modelblock ul{
+    padding-left: 20px;
+}
+.pagedetail .pagedetail__modelblock h6{
+    font-weight: 600;
+}
+.accordion button,
+.accordion button:focus,
+.accordion button:active {
+    box-shadow: none !important;
+    text-decoration: none;
+}
+.accordion .card,
+.accordion .card-header{
+    background: transparent;
+    border: none;
+}
+.accordion button[aria-expanded=false]::before{
+    content: "\f101";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.accordion button[aria-expanded=true]::before{
+    content: "\f103";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
